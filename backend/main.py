@@ -27,6 +27,7 @@ from backend.api.gateway import router as gateway_router
 from backend.api.executor import router as executor_router
 from backend.api.approvals import router as approvals_router
 from backend.api.audit import router as audit_router
+from backend.api.observer import router as observer_router  # [GURURAJ] ground-truth snapshot
 
 
 @asynccontextmanager
@@ -74,6 +75,7 @@ def create_app() -> FastAPI:
     app.include_router(executor_router)
     app.include_router(approvals_router)
     app.include_router(audit_router)
+    app.include_router(observer_router)   # [GURURAJ] read-only ground-truth snapshot
 
     return app
 

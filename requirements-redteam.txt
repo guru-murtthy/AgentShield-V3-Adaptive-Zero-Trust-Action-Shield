@@ -1,0 +1,17 @@
+# AgentShield V3 — Red Team & Validation Dependencies (Laptop 2)
+# Author: Gururaj — Lead Red Team & Validation Engineer
+#
+# Install with:
+#   pip install -r requirements-redteam.txt
+
+# HTTP client — for all network requests to Laptop 1
+httpx==0.27.0
+
+# Interactive terminal
+prompt_toolkit==3.0.47
+
+# Beautiful terminal output
+rich==13.7.1
+
+# Already in project deps — listed here for standalone Laptop 2 install
+pydantic>=2.7.0
